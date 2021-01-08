@@ -25,9 +25,9 @@
 		<!-- Note: The "styleN" class below should match that of the banner element. -->
 		<header id="header" class="alt">
 			<a href="index.html" class="logo"><strong>Golf</strong> <span data-language="lacademy">Academy</span></a>
-			<div class="lan">
+			<!-- <div class="lan">
 				<a href="javascript:void(0)" data-callLang="es" data-language="language">Spanish</a>
-			</div>
+			</div> -->
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -73,9 +73,12 @@
 			<!-- One -->
 			<section id="one">
 				<div class="inner">
-					<p style="text-align: center;">“I always think under par. You have to believe in yourself.” </br>
-						<b>-Sergio Garcia</b>
-					</p>
+					<blockquote>
+						<p style="text-align: center;">“I always think under par. You have to believe in yourself.”
+							</br>
+							<b>-Sergio Garcia</b>
+						</p>
+					</blockquote>
 				</div>
 			</section>
 
@@ -133,7 +136,8 @@
 								</div>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" onclick="sendMailInstructor()" class="primary" />
+								<li><input type="submit" value="Send Message" onclick="sendMailInstructor()"
+										class="primary" />
 								</li>
 								<li><input type="reset" value="Clear" /></li>
 							</ul>
@@ -224,11 +228,11 @@
 			var message = $('#contact textarea').val();
 			// var variableList = document.getElementById("county-category").value;
 			var date = document.getElementById("date").value;
-			window.location.href = 'mailto:buitragowilliam18@gmail.com?subject=New instructor- ' + name + '&body=Name: ' + name + ' ' + lastname + 
-			'%0D%0APhone: ' + tel +
-			'%0D%0ALocated in: ' + add + 
-			'%0D%0ADate of birth: ' + date + 
-			'%0D%0AMessage:%0D%0A ' + message + '%0D%0A';
+			window.location.href = 'mailto:buitragowilliam18@gmail.com?subject=New instructor- ' + name + '&body=Name: ' + name + ' ' + lastname +
+				'%0D%0APhone: ' + tel +
+				'%0D%0ALocated in: ' + add +
+				'%0D%0ADate of birth: ' + date +
+				'%0D%0AMessage:%0D%0A ' + message + '%0D%0A';
 		};
 	</script>
 	<script src="assets/js/jquery.min.js"></script>

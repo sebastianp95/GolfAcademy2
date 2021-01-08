@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/secondary.css" />
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
 <body class="is-preload">
@@ -24,9 +25,9 @@
 		<!-- Header -->
 		<header id="header" class="alt">
 			<a href="index.html" class="logo"><strong>Golf</strong> <span data-language="lacademy">Academy</span></a>
-			<div class="lan">
+			<!-- <div class="lan">
 				<a href="javascript:void(0)" data-callLang="es" data-language="language">Spanish</a>
-			</div>
+			</div> -->
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -38,8 +39,8 @@
 
 				<li><a href="about.html">About</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="index.html">Private Lesson</a></li>
-				<li><a href="landing.html">Careers</a></li>
+				<li><a href="privateLesson.html">Private Lesson</a></li>
+				<li><a href="careers.html">Careers</a></li>
 
 			</ul>
 			<ul class="actions stacked">
@@ -52,221 +53,164 @@
 		<div id="main" class="alt">
 
 			<!-- One -->
+
 			<section id="one">
 				<div class="inner">
 					<header class="major">
 						<h1>Gallery</h1>
 					</header>
-					<p>“One of the most fascinating things about golf is how it reflects the cycle of life. No matter
-						what you shoot – the next day you have to go back to the first tee and begin all over again and
-						make yourself into something.” </br><b>-Peter Jacobsen</b></p>
+					<blockquote>
+						<p style="text-align: center;">“One of the most fascinating things about golf is how it reflects
+							the cycle of life. No matter
+							what you shoot – the next day you have to go back to the first tee and begin all over again
+							and
+							make yourself into something.” </br><b>-Peter Jacobsen</b></p>
+					</blockquote>
+				</div>
+			</section>
 
+
+
+			<!-- <h1>CSS Grid Gallery</h1> -->
+			<div id="deck" class="container">
+
+				<div class="gallery-container w-3 h-2">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal9.jpeg" alt="nature">
+							<!-- <img id="pictures"> -->
+						</div>
+						<div class="text">Private lesson</div>
+					</div>
 				</div>
 
-				<!-- <div class="col-6 col-12-small">
-						<h3>Sem turpis amet semper</h3>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-					</div>
-					<div class="col-6 col-12-small">
-						<h3>Magna odio tempus commodo</h3>
-						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.</p>
-					</div> -->
-
-
-				<!-- <div class="col-4 col-12-medium">
-						<div class="mypic" onclick="showPicture(0);"></div>
-					</div>
-					<div class="col-4 col-12-medium">
-						<div class="mypic" onclick="showPicture(0);"></div>
-					</div>
-					<div class="col-4 col-12-medium">
-						<div class="mypic" onclick="showPicture(0);"></div>	
-					</div>
-				</div> -->
-
-				<!-- <div class="table-gallery">
-				<table  >
-					
-					<tr>
-						
-						<td style="text-align:right; font-size:100px;" onclick="moveLeft();">
-							<a href="javascript:void(0);" style="text-decoration:none;">&lt;</a></td>
-						<td class="mypic" onclick="showPicture(0);"></td>
-						<td class="mypic" onclick="showPicture(1);"></td>
-						<td class="mypic" onclick="showPicture(2);"></td>
-						<td style="text-align:left; font-size:100px;" onclick="moveRight();">
-							<a href="javascript:void(0);" style="text-decoration:none;">&gt;</a></td>
-						
-					</tr>
-				 <tr>
-						<td>
-						<div class="container6">
-				
-							<ul class="pagination">
-								<li><span class="button small disabled">Prev</span></li>
-								<li><a href="#" class="page active">1</a></li>
-								<li><a href="#" class="page">2</a></li>
-								<li><a href="#" class="page">3</a></li>
-								<li><span>&hellip;</span></li>
-								<li><a href="#" class="page">8</a></li>
-								<li><a href="#" class="page">9</a></li>
-								<li><a href="#" class="page">10</a></li>
-								<li><a href="#" class="button small">Next</a></li>
-							</ul>
-		
+				<div id="deck" class="gallery-container w-3 h-3">
+					<div class="gallery-item">
+						<div id="deck" class="image">
+							<img src="galleryImages\gal10.jpeg" alt="people">
 						</div>
-						</td>
-					</tr> 
-					
-					</table>
-				
-					<div id=closeup style="text-align:right;">
-					<span onclick="hidePicture();" 
-						  style="border: solid 1px black; cursor:pointer; color:red">X</span>
-						 
+						<div class="text">Tournament</div>
 					</div>
-				</div> -->
-
-				<!-- <h1>CSS Grid Gallery</h1> -->
-				<div id="deck" class="container">
-
-					<div class="gallery-container w-3 h-2">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal9.jpeg" alt="nature">
-								<!-- <img id="pictures"> -->
-							</div>
-							<div class="text">Private lesson</div>
-						</div>
-					</div>
-
-					<div id="deck" class="gallery-container w-3 h-3">
-						<div class="gallery-item">
-							<div id="deck" class="image">
-								<img src="galleryImages\gal10.jpeg" alt="people">
-							</div>
-							<div class="text">Tournament</div>
-						</div>
-					</div>
-
-					<div class="gallery-container h-2">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal3.jpeg" alt="sport">
-							</div>
-							<div class="text">Private lesson</div>
-						</div>
-					</div>
-
-					<div class="gallery-container w-2">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal11.jpeg" alt="fitness">
-							</div>
-							<div class="text">Private lesson</div>
-						</div>
-					</div>
-
-					<div class="gallery-container w-4 h-1">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal5.jpeg" alt="food">
-							</div>
-							<div class="text">Private lesson</div>
-						</div>
-					</div>
-
-					<div class="gallery-container">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal13.jpeg" alt="travel">
-							</div>
-							<div class="text">Maxi</div>
-						</div>
-					</div>
-
-					<div class="gallery-container h-2">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal16.jpeg" alt="art">
-							</div>
-							<div class="text">Juanes</div>
-						</div>
-					</div>
-
-					<div class="gallery-container">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal2.jpeg" alt="cars">
-							</div>
-							<div class="text">Willbut</div>
-						</div>
-					</div>
-
-
-					<div class="gallery-container w-3 h-2">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="https://source.unsplash.com/1600x900/?golf" alt="nature">
-							</div>
-							<div class="text">Willbut</div>
-						</div>
-					</div>
-
-					<div class="gallery-container w-3 h-3">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages/gal8.jpeg" alt="people">
-							</div>
-							<div class="text">Willbut</div>
-						</div>
-					</div>
-
-					<div class="gallery-container h-2">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal1.jpeg" alt="sport">
-							</div>
-							<div class="text">William</div>
-						</div>
-					</div>
-
-					<div class="gallery-container w-2">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal7.jpeg" alt="fitness">
-							</div>
-							<div class="text">Willbut</div>
-						</div>
-					</div>
-
-					<div class="gallery-container w-3 h-2">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal12.jpeg" alt="nature">
-							</div>
-							<div class="text">Juanes</div>
-						</div>
-					</div>
-					<div class="gallery-container">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal4.jpeg" alt="travel">
-							</div>
-							<div class="text">Juanes</div>
-						</div>
-					</div>
-
-					<div class="gallery-container">
-						<div class="gallery-item">
-							<div class="image">
-								<img src="galleryImages\gal6.jpeg" alt="cars">
-							</div>
-							<div class="text">Willbut</div>
-						</div>
-					</div>
-
 				</div>
+
+				<div class="gallery-container h-2">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal3.jpeg" alt="sport">
+						</div>
+						<div class="text">Private lesson</div>
+					</div>
+				</div>
+
+				<div class="gallery-container w-2">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal11.jpeg" alt="fitness">
+						</div>
+						<div class="text">Private lesson</div>
+					</div>
+				</div>
+
+				<div class="gallery-container w-4 h-1">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal5.jpeg" alt="food">
+						</div>
+						<div class="text">Private lesson</div>
+					</div>
+				</div>
+
+				<div class="gallery-container">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal13.jpeg" alt="travel">
+						</div>
+						<div class="text">Maxi</div>
+					</div>
+				</div>
+
+				<div class="gallery-container h-2">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal16.jpeg" alt="art">
+						</div>
+						<div class="text">Juanes</div>
+					</div>
+				</div>
+
+				<div class="gallery-container">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal2.jpeg" alt="cars">
+						</div>
+						<div class="text">Willbut</div>
+					</div>
+				</div>
+
+
+				<div class="gallery-container w-3 h-2">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="https://source.unsplash.com/1600x900/?golf" alt="nature">
+						</div>
+						<div class="text">Willbut</div>
+					</div>
+				</div>
+
+				<div class="gallery-container w-3 h-3">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages/gal8.jpeg" alt="people">
+						</div>
+						<div class="text">Willbut</div>
+					</div>
+				</div>
+
+				<div class="gallery-container h-2">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal1.jpeg" alt="sport">
+						</div>
+						<div class="text">William</div>
+					</div>
+				</div>
+
+				<div class="gallery-container w-2">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal7.jpeg" alt="fitness">
+						</div>
+						<div class="text">Willbut</div>
+					</div>
+				</div>
+
+				<div class="gallery-container w-3 h-2">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal12.jpeg" alt="nature">
+						</div>
+						<div class="text">Juanes</div>
+					</div>
+				</div>
+				<div class="gallery-container">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal4.jpeg" alt="travel">
+						</div>
+						<div class="text">Juanes</div>
+					</div>
+				</div>
+
+				<div class="gallery-container">
+					<div class="gallery-item">
+						<div class="image">
+							<img src="galleryImages\gal6.jpeg" alt="cars">
+						</div>
+						<div class="text">Willbut</div>
+					</div>
+				</div>
+
+			</div>
 
 			</section>
 
@@ -277,8 +221,10 @@
 			<div class="inner">
 				<ul class="icons">
 					<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-					<li><a href="https://www.facebook.com/WilbutGolf" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="https://www.instagram.com/wilbutgolf/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.facebook.com/WilbutGolf" class="icon brands alt fa-facebook-f"><span
+								class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/wilbutgolf/" class="icon brands alt fa-instagram"><span
+								class="label">Instagram</span></a></li>
 					<!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 					<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
 				</ul>
@@ -294,42 +240,6 @@
 	</div>
 
 	<!-- Scripts -->
-	<script>
-		// your bunch of pictures
-		var arr = new Array(
-			"galleryImages\gal1.jpeg",
-			"galleryImages\gal2.jpeg",
-			"galleryImages\gal3.jpeg",
-			"galleryImages\gal4.jpeg",
-			"galleryImages\gal5.jpeg"
-		);
-
-		// Refresh pictures
-		function refreshPictures() {
-			// Create new DOM element    
-			var pictures = $('<img id="pictures">');
-			for (var i = 0, n = arr.length; i < n; i++) {
-				pictures.append('<img src="' + arr[i] + '"/>');
-			}
-			// Replace current element by new one
-			$('#pictures').replaceWith(pictures);
-		}
-
-		// Add click listener on #randomize button
-		$('#randomize').on('click', function () {
-			arr = arr.shuffle();
-			refreshPictures();
-		});
-
-		// Initialize pictures
-		refreshPictures();
-
-		// Add shuffle() function to Array prototype
-		Array.prototype.shuffle = function () {
-			for (var j, x, i = this.length; i; j = parseInt(Math.random() * i), x = this[--i], this[i] = this[j], this[j] = x);
-			return this;
-		};
-	</script>	
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
