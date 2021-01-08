@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Private Lesson - Golf Academy</title>
+	<title>Careers - Golf Academy</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -39,8 +39,8 @@
 
 				<li><a href="about.html">About</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="index.html">Private Lesson</a></li>
-				<li><a href="landing.html">Careers</a></li>
+				<li><a href="privateLesson.html">Private Lesson</a></li>
+				<li><a href="careers.html">Careers</a></li>
 
 			</ul>
 			<ul class="actions stacked">
@@ -57,11 +57,12 @@
 					<img src="images/golf22.jpg" alt="" />
 				</span>
 				<header class="major">
-					<h1>Private Lesson</h1>
+					<h1>Careers</h1>
 				</header>
 				<div class="content">
-					<p>Ready to start? Fill out this form to book a swing evaluation<br />
-						or continue you private lessons.</p>
+					<p>We're looking for fun, passionate, and talented individuals to join our growing team.<br />
+						If you’re looking for a place where you can make money, have fun and grow your career, then
+						complete the form bellow </p>
 				</div>
 			</div>
 		</section>
@@ -72,9 +73,9 @@
 			<!-- One -->
 			<section id="one">
 				<div class="inner">
-					<p style="text-align: center;">“Forget the last shot. It takes so long to accept that you can’t
-						always replicate your swing. The only thing you can control is your attitude toward the next
-						shot.” </br><b>-Mark McCumber</b></p>
+					<p style="text-align: center;">“I always think under par. You have to believe in yourself.” </br>
+						<b>-Sergio Garcia</b>
+					</p>
 				</div>
 			</section>
 
@@ -90,14 +91,23 @@
 						<button type="submit" class="btn btn-primary" onclick="sendMail()">Button Text</button> -->
 						<form>
 							<div class="fields">
-								<div class="field">
+								<div class="field half">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" />
 								</div>
+								<div class="field half">
+									<label for="lastname">Last Name</label>
+									<input type="text" name="lastname" id="lastname" />
+								</div>
+								<div class="field">
+									<label for="address">Address</label>
+									<input type="text" name="address" id="address" />
+								</div>
 
 								<div class="field half">
-									<label for="county">County</label>
-									<div class="col-12">
+									<label for="tel">Telephone</label>
+									<input type="tel" name="tel" id="tel" />
+									<!-- <div class="col-12">
 
 										<select name="county-category" id="county-category">
 											<option value="">- County, GA -</option>
@@ -106,20 +116,24 @@
 											<option value="Fulton">Fulton, GA</option>
 
 										</select>
-									</div>
+									</div> -->
 								</div>
 								<div class="field half">
-									<label for="date">Date and time</label>
+									<label for="date">Date of birth</label>
 
-									<input type="datetime-local" id="datetime" name="datetime">
+									<input type="date" id="date" name="date">
 								</div>
 								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="6"></textarea>
+									<label for="message">Message(Cover letter)</label>
+									<textarea
+										placeholder="Tell us about you and please list any experience and/or references..."
+										name="message" id="message" rows="6" onfocus="this.innerHTML=''">
+
+									</textarea>
 								</div>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" onclick="sendMail()" class="primary" />
+								<li><input type="submit" value="Send Message" onclick="sendMailInstructor()" class="primary" />
 								</li>
 								<li><input type="reset" value="Clear" /></li>
 							</ul>
@@ -202,12 +216,19 @@
 
 		// var body = variableList == "Other" ? document.getElementById("newVariable").value : variableList;
 
-		function sendMail() {
+		function sendMailInstructor() {
 			var name = $('#contact #name').val();
+			var lastname = $('#contact #lastname').val();
+			var add = $('#contact #address').val();
+			var tel = $('#contact #tel').val();
 			var message = $('#contact textarea').val();
-			var variableList = document.getElementById("county-category").value;
-			var date = document.getElementById("datetime").value;
-			window.location.href = 'mailto:buitragowilliam18@gmail.com?subject=New applicant- ' + name + '&body=New applicant: ' + name + '!!%0D%0ALocated in: ' + variableList + '%0D%0ATime: ' + date + '%0D%0AMessage: '+ message+ '%0D%0A';
+			// var variableList = document.getElementById("county-category").value;
+			var date = document.getElementById("date").value;
+			window.location.href = 'mailto:buitragowilliam18@gmail.com?subject=New instructor- ' + name + '&body=Name: ' + name + ' ' + lastname + 
+			'%0D%0APhone: ' + tel +
+			'%0D%0ALocated in: ' + add + 
+			'%0D%0ADate of birth: ' + date + 
+			'%0D%0AMessage:%0D%0A ' + message + '%0D%0A';
 		};
 	</script>
 	<script src="assets/js/jquery.min.js"></script>

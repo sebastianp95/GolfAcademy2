@@ -2001,6 +2001,9 @@ input[type="email"],
 input[type="tel"],
 input[type="search"],
 input[type="url"],
+input[type="county"],
+input[type="datetime-local"],
+input[type="date"],
 select,
 textarea {
   -moz-appearance: none;
@@ -2024,6 +2027,9 @@ input[type="email"]:invalid,
 input[type="tel"]:invalid,
 input[type="search"]:invalid,
 input[type="url"]:invalid,
+input[type="county"]:invalid,
+input[type="datetime-local"]:invalid,
+input[type="date"]:invalid,
 select:invalid,
 textarea:invalid {
   box-shadow: none;
@@ -2035,6 +2041,9 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="search"]:focus,
 input[type="url"]:focus,
+input[type="county"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
 select:focus,
 textarea:focus {
   border-color: #9bf1ff;
@@ -2070,6 +2079,12 @@ input[type="email"],
 input[type="tel"],
 input[type="search"],
 input[type="url"],
+input[type="county"],
+input[type="datetime-local"],
+input[type="date"],
+select {
+  height: 2.75em;
+}
 select {
   height: 2.75em;
 }
